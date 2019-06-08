@@ -2,7 +2,7 @@
 <html lang="en">
     <head> 
         <meta charset="utf-8">
-        <title>Contract</title>
+        <title>Contact (Bootstrap)</title>
         <meta charset="utf-8">
         <!---The meta tag below ensures proper rendering and touch zooming
               the width=device stuff sets the width of the page to follow 
@@ -22,16 +22,71 @@
              However, if you just use the CSS part of Bootstrap, you don't need the link below.-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <link rel="stylesheet" type="text/css" href="style.css"> 
 
-<html>
-
-    <body>
-
-
-    </body>
-
-    <footer>
-
-    </footer>
-</html>
+        <html>
+            <body> 
+                <header id="masthead">
+                    <div class="container">
+                        <!-- <a class="navbar-brand" href="#">Logo</a> -->
+                        <a href="index.html" id="logo" >Reginald D. Thorpe Sr.</a>
+                        <nav class="navbar navbar-expand-sm">
+                            <!-- Links -->
+                            <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a> 
+                            </li>
+                            </ul>
+                        </nav>  
+                    </div>
+                </header>
+              
+                <div id="main-container" class="container"> 
+                        <section class="main-section" > 
+                            <h1>Contact</h1>
+        
+                            <form id="contact-form">
+                                <ul>
+                                    <li>
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" 
+                                        placeholder="John Smith" required="required">
+                                    </li>
+                                    <li>
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email" id="email" 
+                                        placeholder="example@gmail.com" required="required">
+                                    </li>
+                                    <li>
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" id="message" 
+                                        required="required"></textarea></textarea>
+                                    </li> 
+                                </ul>
+                                <input type="submit" name="submit">
+                            </form>                  
+                        </section>
+                        <section class="sidebar">
+                            <div id="connect">
+                                <h3>Connect with Me</h3>
+        
+                                <img src="GFITHUB.png" class="social" alt="GitHub">
+                                <img src="linkedin.png" class="social" alt="LinkedIn">
+                                <img src="STACK-OVERFLOW.png" class="social" alt="Stack overflow">
+                            </div>
+                        </section> 
+                </div>
+        
+                <footer>
+                    <div class="container">
+                        &copy: Copyright 2019 Reginald D. Thorpe Sr.
+                    </div>
+                </footer>
+            </body>
+        </html>
