@@ -189,12 +189,14 @@ footer{
 /* CONTACT PAGE */
 #contact-form ul{
     margin-bottom: 20px;
+    padding-left: 0px;
 }
 
 #contact-form li{
     margin-bottom: 10px;
+    list-style-type: none;
 }
-
+z
 label,
 input[type=text],
 input[type=email],
