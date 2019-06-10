@@ -28,8 +28,8 @@
 
     <body>
        <div class="container">
-            <div class="row">
-                 <div class ="col-12"> 
+            <div class="row" id="masthead">
+                 <div class ="col-lg-12"> 
                       <a class="navbar-brand" href="index.html" id="logo" >Reginald D. Thorpe Sr.</a>
                       <nav class="navbar navbar-expand-sm">
                            <ul class="navbar-nav ">
@@ -46,10 +46,12 @@
                       </nav>
             </div> <!-- Div of first row with 1 column-->
         
-            <div class="row">
-                    <div class ="col-6 main-section">
-                         <h1>About Me</h1>
-                         <img src="rthorpepic.jpeg" class="auth-image" alt="My picture">
+            <div class="row justify-content-between container ">
+                     
+                    <div class ="col-sm-6 main-section">
+                         <h1>About Me</h1> 
+                         <img src="rthorpepic.jpeg" class="img-responsive auth-image " alt="My picture">
+                          
                          <p>
                                 I am an innovative leader, visionary and   
                                 proven business  and technology strategist 
@@ -65,12 +67,25 @@
                              
                     </div>
 
-                    <div class ="col-6">
-                        <h1>reggie</h1>
+                    <div class ="col-sm-6 sidebar connect">
+                         <h3>Connect with Me</h3>         
+                         <a target="_blank" title="" href="https://github.com/">
+                            <img alt="" src="GFITHUB.png" class= "iconsize" border=0></a>
+                         <a target="_blank" title="" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">
+                             <img alt="" src="linkedin.png" class= "iconsize" border=0></a>
+                         <a target="_blank" title="" href="https://stackoverflow.com/users/story/11406145">
+                             <img alt="" src="STACK-OVERFLOW.png" class= "iconsize" border=0></a>
+                    </div> 
+            </div> <!-- Div of second row with 2 column-->
+
+            <div id="foot" class="row footer fixed bottom container">
+                    <div class ="col-lg-12"> 
+                            &copy: Copyright 2019 Reginald D. Thorpe Sr.             
                     </div>
+            </div> <!-- Div of third row with 1 column-->
        </div> <!--- container-->
                   
-                               
+        
                         
       
             
