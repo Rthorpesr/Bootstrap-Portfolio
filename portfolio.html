@@ -1,87 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head> 
-        <meta charset="utf-8">
-        <title>Portfolio(Boot-Strap Grid)</title>
-        <meta charset="utf-8">
-        <!---The meta tag below ensures proper rendering and touch zooming
-              the width=device stuff sets the width of the page to follow 
-              the screen-width of the device (which will vary depending on 
-              the device).  The initial-scale=1 part sets the initial zoom
-              level when the page is first loaded by the browser  -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="reset.css" />
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <!-- Latest compiled JavaScript
-             jQuery and Popper?Bootstrap 4 use jQuery and Popper.js for JavaScript components 
-            (like modals, tooltips, popovers etc). 
-             However, if you just use the CSS part of Bootstrap, you don't need the link below.-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<head>
+    <title>PortfoliO</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 
-        <link rel="stylesheet" type="text/css" href="style.css">  
-
-
+<html>
     <body>
-       <div class="container">
-            <div class="row" id="masthead">
-                 <div class ="col-sm-12"> 
-                      <a class="navbar-brand" href="index.html" id="logo" >Reginald D. Thorpe Sr.</a>
-                      <nav class="navbar navbar-expand-sm">
-                           <ul class="navbar-nav ">
-                           <li class="nav-item">
-                               <a class="nav-link" href="index.html">About</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" href="portfolio.html">Portfolio</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" href="contact.html">Contact</a>
-                           </li>
-                           </ul>
-                      </nav>
-                    </div> <!-- Div of first row with 1 column-->
+        <header id="masthead">
+          <div class="container"> 
+            <a href="index.html" id="logo">Reginald D. Thorpe Sr.</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a> 
+                <a href="contact.html">Contact</a>              
+                <a href="https://rthorpesr.github.io/unit-4-game/">Crystal Collector Game</a>
+          </div>    
+        </header>
 
-                    <div id="main-container" class= "row container">   
-                            <div class="col-sm-8 main-section">
-                               <h1>Portfolio</h1> 
-                               <div class="row">
-                                   <div class="col-sm-4 work">
-                                        <img src="Preacher.jpg" class="auth-image" alt="My picture">
-                                        <h3>Preaching</h3>
-                                        <img src="ManCave.jpg" class="auth-image" alt="My picture">
-                                   </div>
-                               </div>
-                            </div>      
-                            <div class ="col-sm-4 sidebar connect">
-                                        <h3>Connect with Me</h3>         
-                                        <a target="_blank" title="" href="https://github.com/">
-                                           <img alt="" src="GFITHUB.png" class= "iconsize"></a>
-                                        <a target="_blank" title="" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">
-                                            <img alt="" src="linkedin.png" class= "iconsize"></a>
-                                        <a target="_blank" title="" href="https://stackoverflow.com/users/story/11406145">
-                                            <img alt="" src="STACK-OVERFLOW.png" class= "iconsize"></a>
-                               
-                              </div>
-                            
+        <div id="main-container" class="container"> 
+                <section class="main-section" > 
+                    <h1>Portfolio</h1>
+
+                    <div class="work">
+                         <img src="Preacher.jpg" class="auth-image" alt="My picture">
+                         <h3>Preaching</h3>
+                    </div>
+                    
+                    <div class="work">
+                            <img src="ManCave.jpg" class="auth-image" alt="My picture">
+                            <h3>GWU Games</h3>
                     </div>
 
-                    <!-- Sticky Footer-->
-                    <div id="foot" class="row footer fixed bottom container">
-                         <div class ="col-lg-12"> 
-                               &copy: Copyright 2019 Reginald D. Thorpe Sr.             
-                         </div>
-</div>
+                    <div class="work">
+                            <img src="fedxfield.png" class="auth-image" alt="My picture">
+                            <h3>Going to fedx</h3>
+                    </div>
 
+                    <div class="work">
+                            <img src="wife.jpg" class="auth-image" alt="My picture">
+                            <h3>time with my wife</h3>
+                    </div>
 
-    <!--  psuedo section  
-          I Ran out of gas at about 11:00 pm. I needed add two additional rows of pictures 
-          Each row would have two columns, except the last row, which one has one picture.                       
-    -->
-                             
+                    <div class="work">
+                            <img src="disney.jpg" class="auth-image" alt="My picture">
+                            <h3>Family funtime</h3>
+                    </div>
+                      
+                </section>
+                <section class="sidebar">
+                    <div id="connect">
+                        <h3>Connect with Me</h3>
+
+                        <img src="GFITHUB.png" class="social" alt="GitHub">
+                        <img src="linkedin.png" class="social" alt="LinkedIn">
+                        <img src="STACK-OVERFLOW.png" class="social" alt="Stack overflow">
+                    </div>
+                </section> 
+        </div>
+
+        <footer>
+            <div class="container">
+                &copy: Copyright 2019 Reginald D. Thorpe Sr.
+            </div>
+        </footer>
     </body>
 </html>
